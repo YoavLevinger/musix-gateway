@@ -10,7 +10,7 @@ import java.util.List;
 public class MusixHandler {
 
     public static void main(String[] args) {
-        String apiKey = "c1a819754f6ac96f0364861302edc4bd";
+        String apiKey = "";
         MusixMatch musixMatch = new MusixMatch(apiKey);
         MusixHandler musixHandler =  new MusixHandler();
 
