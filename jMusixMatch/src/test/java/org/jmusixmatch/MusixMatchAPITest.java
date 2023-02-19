@@ -46,7 +46,7 @@ public class MusixMatchAPITest {
 
 
         // The following will search for tracks with matching artist_name 'Eminem'
-        List<Track> tracks = musixMatch.searchTracks("", "Eminem", "", 10, 10, true);
+        List<Track> tracks = musixMatch.searchTracks("","", "Eminem", "", 10, 10, true);
 
         for (Track trk : tracks) {
             TrackData trkData = trk.getTrack();

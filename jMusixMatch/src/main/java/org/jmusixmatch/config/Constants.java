@@ -54,6 +54,11 @@ public final class Constants {
     public static final String QUERY = "q";
 
     /**
+     * A constant field to denote the value of QUERY_LYRICS in the KV mapping.
+     */
+    public static final String QUERY_LYRICS = "q_lyrics";
+
+    /**
      * A constant field to denote the value of QUERY_ARTIST in the KV mapping.
      */
     public static final String QUERY_ARTIST = "q_artist";

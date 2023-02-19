@@ -2,12 +2,14 @@ package org.jmusixmatch.entity.album;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Date;
+
 public class Album {
     private float album_id;
     private String album_mbid;
     private String album_name;
     private float album_rating;
-    private String album_release_date;
+    private Date album_release_date;
     private float artist_id;
     private String artist_name;
     @SerializedName("primary_genres")
@@ -39,9 +41,6 @@ public class Album {
         return album_rating;
     }
 
-    public String getAlbum_release_date() {
-        return album_release_date;
-    }
 
     public float getArtist_id() {
         return artist_id;
@@ -97,11 +96,7 @@ public class Album {
         this.album_rating = album_rating;
     }
 
-    public void setAlbum_release_date(String album_release_date) {
-        this.album_release_date = album_release_date;
-    }
-
-    public void setArtist_id(float artist_id) {
+   public void setArtist_id(float artist_id) {
         this.artist_id = artist_id;
     }
 
@@ -135,5 +130,33 @@ public class Album {
 
     public void setExternal_ids(External_ids external_idsObject) {
         this.External_idsObject = external_idsObject;
+    }
+
+    public Date getAlbum_release_date() {
+        return album_release_date;
+    }
+
+    public void setAlbum_release_date(Date album_release_date) {
+        this.album_release_date = album_release_date;
+    }
+
+    @Override
+    public String toString() {
+        return "Album{" +
+                "album_id=" + album_id +
+                ", album_mbid='" + album_mbid + '\'' +
+                ", album_name='" + album_name + '\'' +
+                ", album_rating=" + album_rating +
+                ", album_release_date=" + album_release_date +
+                ", artist_id=" + artist_id +
+                ", artist_name='" + artist_name + '\'' +
+                ", Primary_genresObject=" + Primary_genresObject +
+                ", album_pline='" + album_pline + '\'' +
+                ", album_copyright='" + album_copyright + '\'' +
+                ", album_label='" + album_label + '\'' +
+                ", restricted=" + restricted +
+                ", updated_time='" + updated_time + '\'' +
+                ", External_idsObject=" + External_idsObject +
+                '}';
     }
 }
